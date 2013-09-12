@@ -14,25 +14,65 @@
   <!ELEMENT wwwLink (#PCDATA)>
   <!ELEMENT imageFile (#PCDATA)>
   <!ELEMENT mediaType (description)>
-  <!ATTLIST mediaType type CDATA #REQUIRED>
+  <!ATTLIST mediaType type (video | novel) #REQUIRED>
   <!ATTLIST mediaType length CDATA #REQUIRED>
-  <!ATTLIST mediaType lengthIn (pages | minutes) "minutes">
+  <!ATTLIST mediaType lengthIn (pages | minutes | seconds | words | parts) "minutes">
 ]>
 <stories>
   <story>
-    <title></title>
-    <author></author>
-    <language></language>
+    <title>Death Star Cantina</title>
+    <author>Eddie Izzard</author>
+    <language>English</language>
+    <rating ratingName="M">
+      <contentWarning>Coarse language</contentWarning>
+    </rating>
+    <genre>Comedy</genre>
+    <world>Star Wars</world>
+    <description>
+      Eddie Izzard enacts a scene that was removed from the final Star Wars film, in which Darth Vader goes to the Death Star cantina for lunch.
+    </description>
+    <wwwLink>http://www.youtube.com/watch?v=KJ2yRTRlMFU</wwwLink>
+    <imageFile></imageFile>
+    <mediaType type="video" length="365" lengthIn="seconds">
+      <description>Youtube video</description>
+    </mediaType>
+  </story>
+  <story>
+    <title>Across the Stars: A Senator's Tale of Love and Loss</title>
+    <author>DMatukaitis</author>
+    <language>English</language>
     <rating ratingName="G">
       <contentWarning></contentWarning>
     </rating>
-    <genre></genre>
-    <world></world>
-    <description></description>
-    <wwwLink></wwwLink>
-    <imageFile></imageFile>
-    <mediaType type="" length="0" lengthIn="minutes">
+    <genre>Drama/Romance</genre>
+    <world>Star Wars</world>
+    <description>
+      A fanfiction novel depicting the events from Star Wars Episode III: Revenge of the Sith through the eyes and point of view of Padme Amidala. As the Republic crumbles and the Clone War rages on, Padme must do what she can to protect her beloved democracy, forbidden marriage, and secret chid. I own nothing. I seek no profit. Rights remain to whoever they belong to.
+    </description>
+    <wwwLink>http://www.fanfiction.net/s/9347667/1/Across-the-Stars-A-Senator-s-Tale-of-Love-and-Loss</wwwLink>
+    <imageFile>http://ffcdn2012.fictionpressllc.netdna-cdn.com/image/895181/180/</imageFile>
+    <mediaType type="novel" length="15" lengthIn="parts">
       <description></description>
+    </mediaType>
+  </story>
+  <story>
+    <title>Chad Vader: Day Shift Manager</title>
+    <author>Blame Society</author>
+    <language>English</language>
+    <rating ratingName="PG">
+      <contentWarning>Coarse language</contentWarning>
+    </rating>
+    <genre>Comedy</genre>
+    <world>Star Wars / Real world</world>
+    <description>Life is hard when you're Darth Vader's less-talented, less-charismatic younger brother and you manage a grocery store.</description>
+    <wwwLink>
+      <![CDATA[
+      http://www.youtube.com/watch?annotation_id=annotation_968778&feature=iv&src_vid=4wGR4-SeuJ0&v=opplsYSrIHc
+      ]]>
+    </wwwLink>
+    <imageFile></imageFile>
+    <mediaType type="video" length="290" lengthIn="seconds">
+      <description>Youtube video</description>
     </mediaType>
   </story>
 </stories>

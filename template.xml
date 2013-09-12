@@ -14,9 +14,9 @@
   <!ELEMENT wwwLink (#PCDATA)>
   <!ELEMENT imageFile (#PCDATA)>
   <!ELEMENT mediaType (description)>
-  <!ATTLIST mediaType type CDATA #REQUIRED>
+  <!ATTLIST mediaType type (video | novel) #REQUIRED>
   <!ATTLIST mediaType length CDATA #REQUIRED>
-  <!ATTLIST mediaType lengthIn (pages | minutes) "minutes">
+  <!ATTLIST mediaType lengthIn (pages | minutes | seconds | words | parts) "minutes">
 ]>
 <stories>
   <story>
@@ -31,7 +31,7 @@
     <description></description>
     <wwwLink></wwwLink>
     <imageFile></imageFile>
-    <mediaType type="" length="0" lengthIn="minutes">
+    <mediaType type="video" length="0" lengthIn="minutes">
       <description></description>
     </mediaType>
   </story>
