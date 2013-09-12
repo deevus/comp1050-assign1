@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE stories [
+  <!ELEMENT stories (story)>
+  <!ELEMENT story (title, author, language, rating, genre, worlds, description, wwwLink, imageFile)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT language (#PCDATA)>
+  <!ELEMENT rating (contentWarning)>
+  <!ATTLIST rating ratingName (G | PG | M | M15 | MA | R | X) "G">
+  <!ELEMENT contentWarning (#PCDATA)>
+  <!ELEMENT genre (#PCDATA)>
+  <!ELEMENT worlds (world*)>
+  <!ELEMENT world (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT wwwLink (#PCDATA)>
+  <!ELEMENT imageFile (#PCDATA)>
+]>
 <stories>
   <story>
     <title></title>
     <author></author>
     <language></language>
-    <cautionaryContents>
-      <cautionaryContent></cautionaryContent>
-      <cautionaryContent></cautionaryContent>
-      <cautionaryContent></cautionaryContent>
-    </cautionaryContents>
+    <rating ratingName="G">
+      <contentWarning></contentWarning>
+    </rating>
     <genre></genre>
     <worlds>
-      <world></world>
       <world></world>
       <world></world>
     </worlds>
