@@ -13,10 +13,10 @@
   <!ELEMENT description (#PCDATA)>
   <!ELEMENT wwwLink (#PCDATA)>
   <!ELEMENT imageFile (#PCDATA)>
-  <!ELEMENT mediaType (description)>
-  <!ATTLIST mediaType type (video | novel) #REQUIRED>
+  <!ELEMENT mediaType EMPTY>
+  <!ATTLIST mediaType type (video | novel | series) #REQUIRED>
   <!ATTLIST mediaType length CDATA #REQUIRED>
-  <!ATTLIST mediaType lengthIn (pages | minutes | seconds | words | parts) "minutes">
+  <!ATTLIST mediaType lengthIn (pages | minutes | seconds | words | parts | episodes | chapters) "minutes">
 ]>
 <stories>
   <story>
@@ -32,17 +32,15 @@
       Eddie Izzard enacts a scene that was removed from the final Star Wars film, in which Darth Vader goes to the Death Star cantina for lunch.
     </description>
     <wwwLink>http://www.youtube.com/watch?v=KJ2yRTRlMFU</wwwLink>
-    <imageFile></imageFile>
-    <mediaType type="video" length="365" lengthIn="seconds">
-      <description>Youtube video</description>
-    </mediaType>
+    <imageFile>cantina.jpeg</imageFile>
+    <mediaType type="video" length="365" lengthIn="seconds" />
   </story>
   <story>
     <title>Across the Stars: A Senator's Tale of Love and Loss</title>
     <author>DMatukaitis</author>
     <language>English</language>
     <rating ratingName="G">
-      <contentWarning></contentWarning>
+      <contentWarning>None</contentWarning>
     </rating>
     <genre>Drama/Romance</genre>
     <world>Star Wars</world>
@@ -50,10 +48,8 @@
       A fanfiction novel depicting the events from Star Wars Episode III: Revenge of the Sith through the eyes and point of view of Padme Amidala. As the Republic crumbles and the Clone War rages on, Padme must do what she can to protect her beloved democracy, forbidden marriage, and secret chid. I own nothing. I seek no profit. Rights remain to whoever they belong to.
     </description>
     <wwwLink>http://www.fanfiction.net/s/9347667/1/Across-the-Stars-A-Senator-s-Tale-of-Love-and-Loss</wwwLink>
-    <imageFile>http://ffcdn2012.fictionpressllc.netdna-cdn.com/image/895181/180/</imageFile>
-    <mediaType type="novel" length="15" lengthIn="parts">
-      <description></description>
-    </mediaType>
+    <imageFile>acrossthestars.jpeg</imageFile>
+    <mediaType type="novel" length="15" lengthIn="parts" />
   </story>
   <story>
     <title>Chad Vader: Day Shift Manager</title>
@@ -70,9 +66,7 @@
       http://www.youtube.com/watch?annotation_id=annotation_968778&feature=iv&src_vid=4wGR4-SeuJ0&v=opplsYSrIHc
       ]]>
     </wwwLink>
-    <imageFile></imageFile>
-    <mediaType type="video" length="290" lengthIn="seconds">
-      <description>Youtube video</description>
-    </mediaType>
+    <imageFile>chadvader.jpeg</imageFile>
+    <mediaType type="video" length="290" lengthIn="seconds" />
   </story>
 </stories>
