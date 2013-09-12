@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE stories [
+  <!ELEMENT stories (story+)>
+  <!ELEMENT story (title, author, language, rating, genre, world, description, wwwLink, imageFile, mediaType)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT language (#PCDATA)>
+  <!ELEMENT rating (contentWarning)>
+  <!ATTLIST rating ratingName (G | PG | M | M15 | MA | R | X) "G">
+  <!ELEMENT contentWarning (#PCDATA)>
+  <!ELEMENT genre (#PCDATA)>
+  <!ELEMENT world (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT wwwLink (#PCDATA)>
+  <!ELEMENT imageFile (#PCDATA)>
+  <!ELEMENT mediaType EMPTY>
+  <!ATTLIST mediaType type (video | novel | series) #REQUIRED>
+  <!ATTLIST mediaType length CDATA #REQUIRED>
+  <!ATTLIST mediaType lengthIn (pages | minutes | seconds | words | parts | episodes | chapters) "minutes">
+]>
+<stories>
+  <story>
+    <title>Minecraft - Cruise Ship Mystery</title>
+    <author>Yogscast</author>
+    <language>English</language>
+    <rating ratingName="G">
+      <contentWarning>None</contentWarning>
+    </rating>
+    <genre>gaming</genre>
+    <world>Minecraft</world>
+    <description>A lovely cruise on an ocean liner is interrupted by a gruesome minecraft murder mystery!</description>
+    <wwwLink>
+      <![CDATA[
+      http://www.youtube.com/watch?v=HKst1ktrG-o&list=TLOVCM9aU73ys
+      ]]>
+    </wwwLink>
+    <imageFile>cruiseshipdown.jpg</imageFile>
+    <mediaType type="video" length="945" lengthIn="seconds" />
+  </story>
+  <story>
+    <title>Red vs. Blue</title>
+    <author>Rooster Teeth</author>
+    <language>English</language>
+    <rating ratingName="PG">
+      <contentWarning>Coarse language</contentWarning>
+    </rating>
+    <genre>gaming</genre>
+    <world>Halo</world>
+    <description>
+      In the distant future, a group of soldiers battle for control of the least desirable piece of real estate in the known universe -- a box canyon in the middle of nowhere.
+    </description>
+    <wwwLink>http://www.youtube.com/show/redvsblue/</wwwLink>
+    <imageFile>redvsblue.jpg</imageFile>
+    <mediaType type="series" length="200" lengthIn="episodes" />
+  </story>
+  <story>
+    <title>The Effects of Revenge</title>
+    <author>Lady Amiee Krios</author>
+    <language>English</language>
+    <rating ratingName="M">
+      <contentWarning>Adult themes, violence</contentWarning>
+    </rating>
+    <genre>gaming</genre>
+    <world>Mass Effect</world>
+    <description>
+      Amiee and Amber have ruined the of life of Theodonus… According to him. On the run from a Turian hell bent on revenge, Amiee and her friends are forced to fight for their lives against the strongest kind of enemy. One with a blank check and nothing to lose. Starring, TheRev28, CuHnadian, Bronzedamazon and Rockycombo.
+    </description>
+    <wwwLink>http://www.fanfiction.net/s/9327216/1/The-Effects-of-Revenge</wwwLink>
+    <imageFile>effectsofrevenge.jpg</imageFile>
+    <mediaType type="novel" length="30" lengthIn="chapters" />
+  </story>
+</stories>
