@@ -8,7 +8,7 @@
       <cautionaryContent></cautionaryContent>
       <cautionaryContent></cautionaryContent>
       <cautionaryContent></cautionaryContent>
-    <cautionaryContents>
+    </cautionaryContents>
     <genre></genre>
     <worlds>
       <world></world>
@@ -18,5 +18,8 @@
     <description></description>
     <wwwLink></wwwLink>
     <imageFile></imageFile>
+    <mediaType type="" length="" lengthIn="">
+      <description></description>
+    </mediaType>
   </story>
 </stories>
